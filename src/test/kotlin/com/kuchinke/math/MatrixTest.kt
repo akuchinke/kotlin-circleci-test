@@ -54,4 +54,14 @@ class MatrixTest {
         println(expected.toFormattedString())
         assert(a*b == expected)
     }
+
+    @Test
+    fun failing(){
+
+        val a = matrix{
+            row(1,2,3)
+            row(4,5,6,7)
+        }
+
+    }
 }
