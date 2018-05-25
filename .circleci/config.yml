@@ -32,7 +32,7 @@ jobs:
           key: v1-dependencies-{{ checksum "build.gradle" }}
 
 
-      - run:
+      - run: gradle test
         name: Save test results
         command: |
           mkdir -p ~/junit/
