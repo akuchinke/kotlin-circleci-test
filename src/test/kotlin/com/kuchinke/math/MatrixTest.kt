@@ -55,8 +55,8 @@ class MatrixTest {
         assert(a*b == expected)
     }
 
-    @Test
-    fun failing(){
+    @Test(expected = RuntimeException::class)
+    fun `mismatching matrix dimensions`(){
 
         val a = matrix{
             row(1,2,3)
